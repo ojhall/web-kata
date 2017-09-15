@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
+import data from './data'
+import Products from './Products.js'
 
 class App extends Component {
   render() {
@@ -11,7 +13,7 @@ class App extends Component {
         To get started change this text and save save to reload.
       </p>
       <div className='products'>
-        ... your code here
+        <Products products={data.products} />
       </div>
     </div>
   }

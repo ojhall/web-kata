@@ -1,0 +1,17 @@
+.product {
+    margin-bottom: 1em
+  }
+  
+  .productName { 
+    font-weight: bold
+  }
+  
+  .freeProduct {
+    font-weight: bold;
+    color: red
+  }
+  
+  .newProduct {
+    font-weight: bold;
+    color: blue;
+  }
