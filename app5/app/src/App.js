@@ -20,6 +20,18 @@ class App extends Component {
     });
   }
 
+  /*
+  refreshProducts() {
+    fetch('/api/products/get').then(response => {
+      if (response.ok) {
+        return response.json().then(json => {
+          me.setState({ products: json })
+        })
+      }
+    });
+  }
+  */
+
   render() {
     return <div className="App">
       <div className="App-header">
