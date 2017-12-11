@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
-import data from './data.js'
 
 import ProductMenu from './ProductMenu.js'
 import ProductContainer from './ProductContainer.js'
@@ -10,7 +9,15 @@ class App extends Component {
 
   constructor(props) {
     super(props)
-    this.state = { products: data.products }
+    this.state = { products: [] }
+    const me = this
+    fetch('/api/products/get').then(response => {
+      if (response.ok) {
+        return response.json().then(json => {
+          me.setState({ products: json })
+        })
+      }
+    });
   }
 
   render() {
