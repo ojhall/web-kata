@@ -13,7 +13,7 @@ export default (state = initialState, action) => {
     case WEB_SERVER_VERSION_REQUESTED:
       return {
         ...state,
-        inProgress: true
+        inProgress: true,
       }
     case WEB_SERVER_VERSION_COMPLETED:
       return {
